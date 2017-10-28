@@ -6,73 +6,74 @@
         <title>Photo Gallery</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="src/css/swipebox.css">
-        
+        <link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Marvel" rel="stylesheet">
     </head>
     <body>
         <div class="container">
             <div class="search">
-                <input type="search" id="search" name="user_search"
-                placeholder = "Search( 16pt )">
-            </div>
-
-
-            <div class = "thumbnails">
-
-
-                <a href="big/image.jpg" class="swipebox" title="My Caption">      
-                <div class = "flex" ><img src ="thumbnails/01.jpg" ></div>
-                </a>
-                
-                <a href="big/image.jpg" class="swipebox" title="My Caption">
-                <div class = "flex" ><img src ="thumbnails/02.jpg" ></div>
-                </a>
-
-                <a href="big/image.jpg" class="swipebox" title="My Caption">
-                <div class = "flex" ><img src ="thumbnails/03.jpg" ></div>
-                </a>
-
-                <a href="big/image.jpg" class="swipebox" title="My Caption">
-                <div class = "flex padding" ><img src ="thumbnails/04.jpg" ></div>
-                </a>
-
-                <a href="big/image.jpg" class="swipebox" title="My Caption">
-                <div class = "flex" ><img src ="thumbnails/05.jpg" ></div>
-                </a>
-
-                <a href="big/image.jpg" class="swipebox" title="My Caption">
-                <div class = "flex" ><img src ="thumbnails/06.jpg" ></div>
-                </a>
-
-                <a href="big/image.jpg" class="swipebox" title="My Caption">
-                <div class = "flex" ><img src ="thumbnails/07.jpg" ></div>
-                </a>
-
-                <a href="big/image.jpg" class="swipebox" title="My Caption">
-                <div class = "flex padding" ><img src ="thumbnails/08.jpg" ></div>
-                </a>
-
-                <a href="big/image.jpg" class="swipebox" title="My Caption">
-                <div class = "flex" ><img src ="thumbnails/09.jpg" ></div>
-                </a>
-
-                <a href="big/image.jpg" class="swipebox" title="My Caption">
-                <div class = "flex" ><img src ="thumbnails/10.jpg" ></div>
-                </a>
-
-                <a href="big/image.jpg" class="swipebox" title="My Caption">
-                <div class = "flex" ><img src ="thumbnails/11.jpg" ></div>
-                </a>
-
-                <a href="big/image.jpg" class="swipebox" title="My Caption">
-                <div class = "flex padding" ><img src ="thumbnails/12.jpg" ></div>
-                </a>
+                <input type="search" id="search" name="user_search" placeholder = "Search">
             </div>
             
+            <div class = "thumbnails">
+                <a href="photos/01.jpg" data-lightbox="locations" title="I love hay bales. Took this snap 
+                on a drive through the countryside past some straw fields.">      
+                    <div class = "flex" ><img src ="thumbnails/01.jpg"  alt="Hay Bales" ></div>
+                </a>
+                
+                <a href="photos/02.jpg" data-lightbox="locations" data-lightbox="locations" title="The lake 
+                was so calm today. We had a great view of the snow on the mountains from here.">
+                    <div class = "flex" ><img src ="thumbnails/02.jpg" alt="Lake"></div>
+                </a>
 
+                <a href="photos/03.jpg" data-lightbox="locations" title="Canyon I hiked to the top of the mountain
+                and got this picture of the canyon and trees below.">
+                    <div class = "flex" ><img src ="thumbnails/03.jpg" alt="Canyon" ></div>
+                </a>
 
+                <a href="photos/04.jpg" data-lightbox="locations" title="It was amazing to see an iceberg up close, 
+                it was so cold but didn’t snow today.">
+                    <div class = "flex padding" ><img src ="thumbnails/04.jpg" alt= "Iceberg"></div>
+                </a>
+
+                <a href="photos/05.jpg" data-lightbox="locations" title="The red cliffs were beautiful. It was really 
+                hot in the desert but we did a lot of walking through the canyons.">
+                    <div class = "flex" ><img src ="thumbnails/05.jpg" alt="desert" ></div>
+                </a>
+
+                <a href="photos/06.jpg" data-lightbox="locations" title="Fall is coming, I love when the leaves on the
+                trees start to change color.">
+                    <div class = "flex" ><img src ="thumbnails/06.jpg" alt="Fall" ></div>
+                </a>
+
+                <a href="photos/07.jpg" data-lightbox="locations" title="I drove past this plantation yesterday, everything
+                is so green!">
+                    <div class = "flex" ><img src ="thumbnails/07.jpg" alt="Plantation"></div>
+                </a>
+
+                <a href="photos/08.jpg" data-lightbox="locations" title="My summer vacation to the Oregon Coast. I love the sandy dunes!">
+                    <div class = "flex padding" ><img src ="thumbnails/08.jpg" alt="Dunes" ></div>
+                </a>
+
+                <a href="photos/09.jpg" data-lightbox="locations" title="We enjoyed a quiet stroll down this countryside lane.">
+                    <div class = "flex" ><img src ="thumbnails/09.jpg" alt="Countryside"></div>
+                </a>
+
+                <a href="photos/10.jpg" data-lightbox="locations" title="Sunset at the coast! The sky turned a lovely shade of orange.">
+                    <div class = "flex" ><img src ="thumbnails/10.jpg" alt="Sunset"></div>
+                </a>
+
+                <a href="photos/11.jpg" data-lightbox="locations" title="I did a tour of a cave today and the view of the landscape below
+                was breathtaking.">
+                    <div class = "flex" ><img src ="thumbnails/11.jpg" alt="Cave" ></div>
+                </a>
+
+                <a href="photos/12.jpg" data-lightbox="locations" title="I walked through this meadow of bluebells and got a good view of 
+                the snow on the mountain before the fog came in.">
+                    <div class = "flex padding" ><img src ="thumbnails/12.jpg" alt="Bluebells" ></div>
+                </a>
+            </div>  
         </div>
-
-    
+        <script src="lightbox2-master/dist/js/lightbox-plus-jquery.js"></script>
     </body>
 </html>
