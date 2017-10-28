@@ -11,15 +11,27 @@
     text-align: center;
 }
 
+input, 
+#no-results,
+.nav a {
+    font-family: 'Marvel', sans-serif;
+    color: slategrey;
+}
+
 input {
-    width: 45%;
+    width: 100%;
     border: 1px solid lightgrey;
     border-radius: 5px;
     padding: 10px;
-    margin: 2.1875em;
-    font-family: 'Marvel', sans-serif;
-    color: slategrey;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
     font-size: 1.125em;
+}
+
+input:focus {
+    outline: none !important;
+    border:1px solid lightgrey;
+    box-shadow: 0 0 10px rgb(152, 154, 156);
 }
 
 .thumbnails {
@@ -30,14 +42,68 @@ input {
 }
 
 #no-results{
-    font-family: 'Marvel', sans-serif;
-    font-size: 1.25em;;
+    font-size: 1.25em;
 }
 
 img {
-       border-radius: 3px;
+    width: 9.375em;
+    border-radius: 3px;
 }
 
 .img-padding {
-    padding: 2em;
+    padding: 1em;
+}
+
+.nav {
+    font-family: 'Marvel', sans-serif;
+    text-align: center;
+    font-size: 19px;
+    margin-bottom: 1em;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+
+
+
+/* Media Query */
+@media (min-width: 768px) {
+
+    input {
+        width: 75%;
+    }
+
+    .img-padding {
+        padding: 1.5em;
+    }
+
+}
+
+@media (min-width: 1024px){
+
+    body {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    input {
+        width: 45%;
+    }
+
+    .container {
+        width: 90%;
+        height: 800px;
+        border-bottom: 1px solid lightgrey;
+    }
+
+    img {
+        width: 10.9375em;
+    }
+    
+    .nav {
+        display: none;
+    }
+
 }

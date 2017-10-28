@@ -2,12 +2,13 @@ function startup() {
     var $imgs = $(".thumbnails a");
     var $search = $("#search-filter");
     var $noResults = $("#no-results")[0];
+    var $topButton = $(".nav .top")[0];
 
     $noResults.style.display= "none";
 
     // Declaring a function which will be called when the search input
     // keyup event is trigged (via user text input into the field)
-    var filterImages = function() {
+    const filterImages = function() {
         // 'this' is $search element
         const searchValue = this.value.trim().toLowerCase();
         var resultsFound = false;
@@ -25,8 +26,10 @@ function startup() {
 
         if (resultsFound) {
             $noResults.style.display = "none";
+            $topButton.style.display = "";
         } else {
             $noResults.style.display = "";
+            $topButton.style.display = "none";
         }
     }
 
