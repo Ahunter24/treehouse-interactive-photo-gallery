@@ -3,7 +3,7 @@
 }
 
 .container {
-    width: 55%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -16,10 +16,10 @@ input {
     border: 1px solid lightgrey;
     border-radius: 5px;
     padding: 10px;
-    margin: 35px;
+    margin: 2.1875em;
     font-family: 'Marvel', sans-serif;
     color: slategrey;
-    font-size: 18px;
+    font-size: 1.125em;
 }
 
 .thumbnails {
@@ -29,14 +29,15 @@ input {
     justify-content: center;
 }
 
+#no-results{
+    font-family: 'Marvel', sans-serif;
+    font-size: 1.25em;;
+}
+
 img {
        border-radius: 3px;
 }
 
-.flex {
-    padding: 0 50px 50px 0;
-}
-
-.padding {
-    padding-right: 0;
+.img-padding {
+    padding: 2em;
 }
