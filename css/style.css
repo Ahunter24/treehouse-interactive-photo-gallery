@@ -111,3 +111,7 @@ img:hover {
     }
 
 }
+
+.lightbox {
+    position:fixed;
+}
